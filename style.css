@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkslateblue;
+}
+
+.container {
+    background-color: whitesmoke;
+    color: darkslateblue;
+    padding: 50px;
+    margin: 5%;
+    position: relative;
+    display: flex;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 500px;
+    height: 500px;
+}
+
+@media (max-width:375px) {
+    .slide img {
+        width: 200px;
+        height: 200px;
+    }  
+}
+
+.buttons .next {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    color: whitesmoke ;
+    background: darkslateblue;
+    padding: 5px;
+    border-radius:50%;
+    cursor: pointer;
+}
+
+.buttons .prev {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    font-size: 20px;
+    font-weight: 900;
+    color: whitesmoke ;
+    background: darkslateblue;
+    padding: 5px;
+    border-radius:50%;
+    cursor: pointer;
+}
+
+.buttons .prev:hover {
+    color: black;
+    box-shadow: 2px 2px 2px 2px gainsboro;
+    font-size: 22px;
+    transition: all 0.1s ease-in-out;
+}
+
+.buttons .next:hover {
+    color: black;
+    box-shadow: 2px 2px 2px 2px gainsboro;
+    font-size: 22px;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.holes {
+    position: absolute;
+    bottom: 15px;
+    left: 40%;
+    right: 40%;
+    display: flex;
+}
+
+.dot {
+    background-color: whitesmoke;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid darkslateblue;
+    margin-right: 10px;
+}
+
